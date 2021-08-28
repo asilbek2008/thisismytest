@@ -4,17 +4,7 @@ define('API_KEY','1708212263:AAE6oXo40tPacp3n44x02R4ofsVw06SbNtI');
 $admin = "833935652";
 $kanal = "@PHP_web_dasturlash";
 $hamkor = "@Fair_GamerS";
-  function del($nomi){
-      array_map('unlink',glob("$nomi"));
-}
-
-function ty($ch){ 
-   return bot('sendChatAction', [
-   'chat_id' => $chat,
-   'action' => 'typing',
-   ]);
-   }
-
+  
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
